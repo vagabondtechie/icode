@@ -1,0 +1,19 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>IDE - icode</title>
+        <meta name="description" content="A bare bones HTML5 template file">
+        <meta name="author" content="You">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+
+    <body>
+        {% block body %}
+        {% endblock %}
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+{% extends "_layout.html" %}
+
+{% block body %}
+<form action="/ide" method="POST">
+    <strong>Your language of choice: </strong>
+    <select name="language">
+        <option value="c">C</option>
+        <option value="cpp">C++</option>
+        <option value="py">Python</option>
+    </select>
+    <p>
+        <textarea id="mycode" name="mycode" style="width: 50%; padding: 1em;" rows="20">{{ mycode }}</textarea>
+    </p>
+    <input type="submit" value="Compile and Run" />
+</form>
+{% endblock %}
